@@ -1,0 +1,204 @@
+{
+   "checksum": "89415545eea7c8774f9834edc489b2c1",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13419576553689895",
+            "date_last_used": "0",
+            "guid": "90c8c712-f34f-49fa-b00f-13e4622b377b",
+            "id": "21",
+            "name": "Agoda",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://js.redirect.hp.com/jumpstation?bd=agoda&c=232&locale=*&pf=*&tp=edge&TYPE=3",
+            "visit_count": 0
+         }, {
+            "date_added": "13419576553688577",
+            "date_last_used": "0",
+            "guid": "2312b0ae-63c4-4c4b-9aaf-7ee7c21995ad",
+            "id": "20",
+            "name": "McAfee Security",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.mcafee.com/consumer/v/browserfav/hp.html",
+            "visit_count": 0
+         }, {
+            "date_added": "13419576553684790",
+            "date_last_used": "0",
+            "guid": "cdfcc308-9265-49e2-a6dc-50e893082909",
+            "id": "19",
+            "name": "Adobe offers",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://js.redirect.hp.com/jumpstation?c=232&type=103EF_NW&RedeemCode=6zuibSZhXnN0%2fBjSAxvHSET%2bUZB0%2bXkvq2OFRPasayAPPPLdpWQrvjzUmyQ0BoO4h567GzjIHd5FdI8XuDClPFbRrTspAENtUWoW94eg6v0lsWQMSUDnxxwZNw5p83cxezS1y8Lm7hnb1bhSklar3OrGbhkcARUgntp4Q6yLRzo%3d",
+            "visit_count": 0
+         }, {
+            "date_added": "13392951102594374",
+            "date_last_used": "0",
+            "guid": "6a92e1ed-f462-4e4e-a36e-3bd5b8a1a323",
+            "id": "14",
+            "name": "Booking.com",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://secure.rezserver.com/sdk/v1/LinkFwd?refid=9006&destination=booking&refclickid=webslice1819",
+            "visit_count": 0
+         }, {
+            "date_added": "13345101364989687",
+            "date_last_used": "0",
+            "guid": "7564eb7a-d655-4f11-9433-89e6d30c586e",
+            "id": "15",
+            "name": "Gmail",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://accounts.google.com/b/0/AddMailService",
+            "visit_count": 0
+         }, {
+            "date_added": "13345101364990944",
+            "date_last_used": "0",
+            "guid": "d31fcd47-e606-4615-8441-f9e05c0dab1d",
+            "id": "16",
+            "name": "YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://youtube.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13345101364991663",
+            "date_last_used": "0",
+            "guid": "5c4492d6-addf-43be-990f-03c761a84501",
+            "id": "17",
+            "name": "Maps",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://maps.google.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13419576397013978",
+            "date_last_used": "0",
+            "guid": "87b6a983-6693-44eb-a479-0b6316e17e17",
+            "id": "9",
+            "name": "Agoda",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://js.redirect.hp.com/jumpstation?bd=agoda&c=232&locale=*&pf=*&tp=edge&TYPE=3",
+            "visit_count": 0
+         }, {
+            "date_added": "13419576397013192",
+            "date_last_used": "0",
+            "guid": "2b11be0b-50e5-4d98-b404-1c5b654f3ca4",
+            "id": "8",
+            "name": "McAfee Security",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.mcafee.com/consumer/v/browserfav/hp.html",
+            "visit_count": 0
+         }, {
+            "date_added": "13419576397011058",
+            "date_last_used": "0",
+            "guid": "553d6bbc-8d04-44f6-89d7-43b58f28f59c",
+            "id": "7",
+            "name": "Adobe offers",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://js.redirect.hp.com/jumpstation?c=232&type=103EF_NW&RedeemCode=6zuibSZhXnN0%2fBjSAxvHSET%2bUZB0%2bXkvq2OFRPasayAPPPLdpWQrvjzUmyQ0BoO4h567GzjIHd5FdI8XuDClPFbRrTspAENtUWoW94eg6v0lsWQMSUDnxxwZNw5p83cxezS1y8Lm7hnb1bhSklar3OrGbhkcARUgntp4Q6yLRzo%3d",
+            "visit_count": 0
+         } ],
+         "date_added": "13419576396580600",
+         "date_last_used": "0",
+         "date_modified": "13419576553689895",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13392951102589452",
+               "date_last_used": "0",
+               "guid": "0cb969a3-5df9-44e6-ad8a-b8101a22731c",
+               "id": "11",
+               "name": "Booking.com",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "http://secure.rezserver.com/sdk/v1/LinkFwd?refid=9006&destination=booking&refclickid=iefav1819",
+               "visit_count": 0
+            } ],
+            "date_added": "13393082779795476",
+            "date_last_used": "0",
+            "date_modified": "13393082779795476",
+            "guid": "eec4db61-f95b-4fd2-bd15-e6950eb5e94f",
+            "id": "10",
+            "name": "HP",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "date_added": "13354509218625227",
+            "date_last_used": "0",
+            "guid": "9f13d721-2979-4fcc-8144-02cc6bb15170",
+            "id": "12",
+            "name": "Delcom",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://delcom.org/practices/video-presentation/subject/4020d7e2-fc62-4457-ab42-0d6f6bc73d0d/vp/4924d50b-8f40-4af8-ae1a-24f3a76ccf61",
+            "visit_count": 0
+         }, {
+            "date_added": "13369739189193139",
+            "date_last_used": "0",
+            "guid": "f4b4a08b-e5d8-4624-b315-70f681032d5c",
+            "id": "13",
+            "name": "",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.tiktok.com/search?q=cara%20mereset%20keyboard%20gamrn%27&t=1725265495749",
+            "visit_count": 0
+         } ],
+         "date_added": "13419576396580600",
+         "date_last_used": "0",
+         "date_modified": "13369739189193139",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13419576396580600",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "workspaces_v2": {
+         "children": [  ],
+         "date_added": "13419576396580600",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "75aa6670-344f-549d-b742-660f029506ab",
+         "id": "5",
+         "name": "Workspaces",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CjEKDgiIgQISCBuiY6qaAQAAEgAqGEVyT25VQXQrQ2Zrc0ZvR0pFOThZOXc9PUgDoAYHEq0BCBESqAEKHEtQcWhwSFB2L0RuYjd4VXVNSTg5REw0QjNHQT0SJDVjNDQ5MmQ2LWFkZGYtNDNiZS05OTBmLTAzYzc2MWE4NDUwMRgAIAAoADDJs974iDM42sectPIyQNrHnLTyMkocdlhoRFdvRmFUZUI0M1hnTEhvM0g0RVF6R2EwPVofIh3uTGVhSWZpT2NhNHJQY3FlbDJZa21uTE96ckJ3PWX3XBVBwj4CYAUSjgEIBRKJAQocd1JCclpMKzZQQTlhdktnak5QN0pYRExjZnZzPRIkZGViYjhjNTEtMTM0NC01YjM0LTg1YmUtMTFjZjJjYTAzZTI5GAAgACgAMJDwysWkMziv8crFpDNAr/HKxaQzShxubXg2NXNRRHZ4SThUZ0VlditBK250dG9TbjQ9WgBlAAAAAMI+AmAAEo4BCAISiQEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SJGZmM2RhNDQ5LTNiYzMtNWUyMC1iNzBhLThjNzhkZTY5ODIyMBgAIAAoADD1x4rL8TI4pc+Ky/EyQKXPisvxMkocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PVoAZQAAAADCPgJgABKsAQgKEqcBChxIbndqR05JSlhTZ2hQRGFVZXJTSlBnWkFhQ009EiRlZWM0ZGI2MS1mOTViLTRmZDItYmQxNS1lNjk1MGViNWU5NGYYACAAKAAw15D9ifIyOJGU/YnyMkCRlP2J8jJKHHRKOEd5SzdueXY3RDZjSWxsZWZuUEFaYTdDYz1aHiIcbGFoZVZVTXhwSVFoUHdxdVhnR2tUZlNHeUhVPWUAAAAAwj4CYAASrQEIDBKoAQocL0dGV3pPM1BmUkxERE5NUkVXSXBaTXhoOWpzPRIkOWYxM2Q3MjEtMjk3OS00ZmNjLTgxNDQtMDJjYzZiYjE1MTcwGAAgACgAMNfFnLTyMjjDx5y08jJAw8ectPIyShxLeG9kRkM0cURyQnh3OGRCWjM3Z2ZWYzdoME09Wh8iHbZGUk9aalpmMnV6R0cvTXNrMlFJYzdpcFc5N0E9ZZqEU/fCPgJgBRKsAQgLEqcBChxBWi9CamJwUUhlbzNKNnFjcW9pMnBCYm9ZV0k9EiQwY2I5NjlhMy01ZGY5LTQ0ZTYtYWQ4YS1iODEwMWEyMjczMWMYACAAKAAwiJz9ifIyOLud/YnyMkC7nf2J8jJKHGRQNUR3U1N4RGhyL09rS0h6Z0ZxZWdpU3phND1aHiIcdDVtaXZnRHRoWXFqRjVZUkxvellmVmE4VDlRPWUAAAAAwj4CYAUSjgEIARKJAQoceXhKLzZmdmtlY3I3a3A1RVF6QjR0V0xwZGJFPRIkZDY2ODk5YzQtYzE1Yi01NTE0LTg0ZjktOWE4MWM2OTAzNzA2GAAgACgAMPTHisvxMjiFz4rL8TJAhc+Ky/EyShxhUkNXTGdoRjliNUlucUtJRHZ1Si9qdlFrRmM9WgBlAAAAAMI+AmAAEq0BCA0SqAEKHDNyaUR2UmdPWXAyVFJVZUxjazVnZ0xndDNsWT0SJGY0YjRhMDhiLWU1ZDgtNDYyNC1iMzE1LTcwZjY4MTAzMmQ1YxgAIAAoADDWxZy08jI4rMectPIyQKzHnLTyMkocK2ZLR2UrNUhRMGMwTXRJY2l0bTBxTkp3b28wPVofIh3bUklwdzFrSmdUYWlEOGl1OUhicUN0S0NmcmFzPWWPq/EVwj4CYAUSrAEIDhKnAQocQ1VmY1NzZjU0UmV1VWVXcjk0c1ptRVlNNmZJPRIkNmE5MmUxZWQtZjQ2Mi00ZTRlLWEzNmUtM2JkNWI4YTFhMzIzGAAgACgAMNiQ/YnyMjiolP2J8jJAqJT9ifIyShw3bFkwMlBET0dUZnJuSnRsN1F1NTIvL2ltQUU9Wh4iHHJrTGNqQUtkY3ZHYzNHVnhJcGdIWC8xNldjTT1lAAAAAMI+AmAFEq0BCA8SqAEKHEZSd0YzaElxZjF5WTRxM0hzbHNRbFpxRFlvND0SJDc1NjRlYjdhLWQ2NTUtNGYxMS05NDMzLTg5ZTZkMzBjNTg2ZRgAIAAoADCaxI7TqjM48sectPIyQPLHnLTyMkocSDQ4alZWcERKRk1NeXIxTjRlWFo0bDhhdi93PVofIh25ZUJNL3lpT1Bxem15RUF0RWh3clZEVFE5UHRZPWUiOZg2wj4CYAUSrQEIEBKoAQocNmZYNmpvblpvbUkxSkcvKzFLYkczLzN6TjFnPRIkZDMxZmNkNDctZTYwNi00NjE1LTg0NDEtZjllMDVjMGRhYjFkGAAgACgAMMiz3viIMziMyJy08jJAjMictPIyShxGZS9XUXNyOGw1Y3AvZWNpeUhDaEU0VkNLYmc9Wh8iHdxKNWdmUjhpSElJc3FnSktSeC9sOVlSQUs4RzQ9ZUP4bYDCPgJgBRKOAQgDEokBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiQ3MDY2ZWZlZS0wY2MxLTU3NTUtOTMxYS01OTdjODQ2OWYwNDQYACAAKAAw+seKy/EyOO/PisvxMkDvz4rL8TJKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAwj4CYAAwADgA",
+   "version": 1
+}

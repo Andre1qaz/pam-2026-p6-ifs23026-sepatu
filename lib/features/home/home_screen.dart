@@ -13,6 +13,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // Pastikan TopAppBarWidget merender teks 'Home' agar test tidak gagal
       appBar: const TopAppBarWidget(title: 'Home'),
       body: const _HomeBody(),
     );
@@ -48,28 +49,13 @@ class _HomeBody extends StatelessWidget {
             ),
             child: Stack(
               children: [
+                // Ornamen Lingkaran (Disesuaikan agar tidak mengganggu layout)
                 Positioned(
                   top: -30,
                   right: -20,
-                  child: Container(
-                    width: 140,
-                    height: 140,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.white.withValues(alpha: 0.08),
-                    ),
-                  ),
-                ),
-                Positioned(
-                  bottom: -20,
-                  left: 100,
-                  child: Container(
-                    width: 80,
-                    height: 80,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.white.withValues(alpha: 0.05),
-                    ),
+                  child: CircleAvatar(
+                    radius: 70,
+                    backgroundColor: Colors.white.withValues(alpha: 0.08),
                   ),
                 ),
                 Padding(
@@ -81,18 +67,22 @@ class _HomeBody extends StatelessWidget {
                       Text(
                         'SoleStore 👟',
                         style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w800,
-                            ),
+                          color: Colors.white,
+                          fontWeight: FontWeight.w800,
+                        ),
                       ),
-                      const SizedBox(height: 6),
-                      Text(
-                        'Temukan sepatu impianmu\ndengan harga terbaik!',
-                        style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                              color: Colors.white.withValues(alpha: 0.9),
-                            ),
+                      const SizedBox(height: 4), // Dikurangi dari 6 ke 4
+                      // PERBAIKAN: Gunakan Flexible atau batasi baris agar tidak overflow 6px
+                      Flexible(
+                        child: Text(
+                          'Temukan sepatu impianmu\ndengan harga terbaik!',
+                          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            color: Colors.white.withValues(alpha: 0.9),
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                        ),
                       ),
-                      const SizedBox(height: 12),
+                      const SizedBox(height: 8), // Dikurangi dari 12 ke 8
                       GestureDetector(
                         onTap: () => context.go(RouteConstants.sepatu),
                         child: Container(
@@ -105,9 +95,9 @@ class _HomeBody extends StatelessWidget {
                           child: Text(
                             'Belanja Sekarang',
                             style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                                  color: colorScheme.primary,
-                                  fontWeight: FontWeight.w700,
-                                ),
+                              color: colorScheme.primary,
+                              fontWeight: FontWeight.w700,
+                            ),
                           ),
                         ),
                       ),
@@ -175,7 +165,7 @@ class _HomeBody extends StatelessWidget {
         ),
         SliverToBoxAdapter(
           child: SizedBox(
-            height: 230,
+            height: 240, // Ditambah dari 230 ke 240 untuk ruang aman
             child: ListView.separated(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               scrollDirection: Axis.horizontal,
@@ -189,7 +179,7 @@ class _HomeBody extends StatelessWidget {
           ),
         ),
 
-        // Semua Sepatu
+        // Semua Koleksi
         SliverToBoxAdapter(
           child: Padding(
             padding: const EdgeInsets.fromLTRB(16, 20, 16, 10),
@@ -207,12 +197,12 @@ class _HomeBody extends StatelessWidget {
           sliver: SliverGrid(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
-              childAspectRatio: 0.72,
+              childAspectRatio: 0.7, // Disesuaikan agar lebih panjang ke bawah
               crossAxisSpacing: 12,
               mainAxisSpacing: 12,
             ),
             delegate: SliverChildBuilderDelegate(
-              (context, i) => _GridCard(
+                  (context, i) => _GridCard(
                 sepatu: sepatuList[i],
                 onTap: () =>
                     context.go('${RouteConstants.sepatu}/${sepatuList[i].nama}'),
@@ -247,9 +237,9 @@ class _KategoriChip extends StatelessWidget {
         child: Text(
           label,
           style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                color: isFirst ? colorScheme.onPrimary : colorScheme.onSurfaceVariant,
-                fontWeight: FontWeight.w600,
-              ),
+            color: isFirst ? colorScheme.onPrimary : colorScheme.onSurfaceVariant,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
     );
@@ -264,72 +254,66 @@ class _FeaturedCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        width: 170,
-        decoration: BoxDecoration(
-          color: colorScheme.surface,
-          borderRadius: BorderRadius.circular(16),
-          boxShadow: [
-            BoxShadow(
-              color: colorScheme.shadow.withValues(alpha: 0.08),
-              blurRadius: 12,
-              offset: const Offset(0, 4),
-            ),
-          ],
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            ClipRRect(
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
-              child: Container(
-                height: 130,
-                color: colorScheme.surfaceContainerHighest,
-                child: Image.asset(
-                  sepatu.gambar,
+    // Gunakan Card agar test 'menampilkan minimal satu Card' berhasil
+    return Card(
+      elevation: 0,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: onTap,
+        child: SizedBox(
+          width: 170,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Container(
                   width: double.infinity,
-                  fit: BoxFit.contain,
-                  errorBuilder: (_, __, ___) => Icon(
-                      Icons.shopping_bag, size: 50, color: colorScheme.primary),
+                  color: colorScheme.surfaceContainerHighest,
+                  child: Image.asset(
+                    sepatu.gambar,
+                    fit: BoxFit.contain,
+                    errorBuilder: (_, __, ___) => Icon(
+                        Icons.shopping_bag, size: 50, color: colorScheme.primary),
+                  ),
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(10),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    sepatu.nama,
-                    style: Theme.of(context).textTheme.titleSmall,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    sepatu.hargaFormatted,
-                    style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                          color: colorScheme.primary,
-                          fontWeight: FontWeight.w800,
-                        ),
-                  ),
-                  const SizedBox(height: 4),
-                  Row(
-                    children: [
-                      Icon(Icons.star, size: 13, color: colorScheme.tertiary),
-                      const SizedBox(width: 3),
-                      Text(sepatu.rating.toString(),
-                          style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                                fontWeight: FontWeight.w600,
-                              )),
-                    ],
-                  ),
-                ],
+              Padding(
+                padding: const EdgeInsets.all(10),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      sepatu.nama,
+                      style: Theme.of(context).textTheme.titleSmall,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      sepatu.hargaFormatted,
+                      style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                        color: colorScheme.primary,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Row(
+                      children: [
+                        Icon(Icons.star, size: 13, color: colorScheme.tertiary),
+                        const SizedBox(width: 3),
+                        Text(sepatu.rating.toString(),
+                            style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                              fontWeight: FontWeight.w600,
+                            )),
+                      ],
+                    ),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
@@ -344,54 +328,39 @@ class _GridCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        decoration: BoxDecoration(
-          color: colorScheme.surface,
-          borderRadius: BorderRadius.circular(14),
-          boxShadow: [
-            BoxShadow(
-              color: colorScheme.shadow.withValues(alpha: 0.07),
-              blurRadius: 10,
-              offset: const Offset(0, 3),
-            ),
-          ],
-        ),
+    return Card(
+      elevation: 0,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: onTap,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
-              child: ClipRRect(
-                borderRadius: const BorderRadius.vertical(top: Radius.circular(14)),
-                child: Container(
-                  color: colorScheme.surfaceContainerHighest,
-                  child: Stack(
-                    children: [
-                      Center(
-                        child: Image.asset(
-                          sepatu.gambar,
-                          fit: BoxFit.contain,
-                          errorBuilder: (_, __, ___) => Icon(
-                              Icons.shopping_bag, size: 50, color: colorScheme.primary),
-                        ),
-                      ),
-                      if (sepatu.isFavorit)
-                        Positioned(
-                          top: 8,
-                          right: 8,
-                          child: Container(
-                            padding: const EdgeInsets.all(4),
-                            decoration: BoxDecoration(
-                              color: colorScheme.primary,
-                              shape: BoxShape.circle,
-                            ),
-                            child: const Icon(Icons.favorite, size: 12, color: Colors.white),
-                          ),
-                        ),
-                    ],
+              child: Stack(
+                children: [
+                  Container(
+                    width: double.infinity,
+                    color: colorScheme.surfaceContainerHighest,
+                    child: Image.asset(
+                      sepatu.gambar,
+                      fit: BoxFit.contain,
+                      errorBuilder: (_, __, ___) => Icon(
+                          Icons.shopping_bag, size: 50, color: colorScheme.primary),
+                    ),
                   ),
-                ),
+                  if (sepatu.isFavorit)
+                    Positioned(
+                      top: 8,
+                      right: 8,
+                      child: CircleAvatar(
+                        radius: 10,
+                        backgroundColor: colorScheme.primary,
+                        child: const Icon(Icons.favorite, size: 12, color: Colors.white),
+                      ),
+                    ),
+                ],
               ),
             ),
             Padding(
@@ -408,16 +377,16 @@ class _GridCard extends StatelessWidget {
                   Text(
                     sepatu.merk,
                     style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                          color: colorScheme.onSurfaceVariant,
-                        ),
+                      color: colorScheme.onSurfaceVariant,
+                    ),
                   ),
                   const SizedBox(height: 4),
                   Text(
                     sepatu.hargaFormatted,
                     style: Theme.of(context).textTheme.labelMedium?.copyWith(
-                          color: colorScheme.primary,
-                          fontWeight: FontWeight.w800,
-                        ),
+                      color: colorScheme.primary,
+                      fontWeight: FontWeight.w800,
+                    ),
                   ),
                 ],
               ),
