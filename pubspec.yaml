@@ -1,0 +1,34 @@
+name: pam_2026_p6_ifs23026_sepatu
+description: "Aplikasi katalog sepatu - SoleStore."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  go_router: ^14.8.1
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+  launcher_name: ^1.0.2
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
+
+launcher_name:
+  default: "SoleStore"
+  id: "SoleStore Sepatu"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
